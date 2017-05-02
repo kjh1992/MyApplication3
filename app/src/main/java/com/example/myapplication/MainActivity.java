@@ -6,22 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity11 extends AppCompatActivity {
-Button button1;
+public class MainActivity extends AppCompatActivity {
+Button bttn_option;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main11);
 
-        button1 = (Button) findViewById(R.id.button1);
+        bttn_option = (Button) findViewById(R.id.bttn_option);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        bttn_option.setOnClickListener(new View.OnClickListener() {
 
 
 
             public void onClick(View v) {
 
-                Intent intent1 = new Intent(MainActivity11.this, OptionActivity.class);
+                Intent intent1 = new Intent(MainActivity.this, OptionActivity.class);
 
                 startActivity(intent1);
                 overridePendingTransition(R.anim.anim_slide_in_left, R.anim.anim_slide_out_right);
